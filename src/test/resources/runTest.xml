@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Register and Verify" parallel="false">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener
+                class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener
+                class-name="extentreport.ExtentReportListener"/>
+        <!--<listener-->
+                <!--class-name="retrytestcase.RetryListener"/>-->
+
+    </listeners>
+
+    <test name="Run test on Chrome browser">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <!--	<class name="uk.co.sytner.hompage.MenuItems" />-->
+            <class name="com.cancer.predictive.LoginTest"/>
+            <class name="com.cancer.predictive.SystemTest"/>
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->

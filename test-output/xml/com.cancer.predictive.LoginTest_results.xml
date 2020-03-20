@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run test on Chrome browser"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="6.676">
+  <properties />
+  
+  
+            <testcase name="Login_001_LabSpecialist" time="2.771" classname="com.cancer.predictive.LoginTest" />
+                <testcase name="Login_003_HospitalSpecialist" time="1.318" classname="com.cancer.predictive.LoginTest" />
+                <testcase name="Login_002_PatientAdmin" time="1.123" classname="com.cancer.predictive.LoginTest" />
+                <testcase name="Login_004_SystemAdmin" time="1.464" classname="com.cancer.predictive.LoginTest" />
+      
+</testsuite>

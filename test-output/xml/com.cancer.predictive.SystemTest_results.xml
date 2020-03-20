@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run test on Chrome browser"
+           tests="7"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="39.594">
+  <properties />
+  
+  
+            <testcase name="SystemTest_004_DeletePatient" time="15.454" classname="com.cancer.predictive.SystemTest" />
+                <testcase name="SystemTest_007_DeleteUser" time="15.312" classname="com.cancer.predictive.SystemTest" />
+                <testcase name="SystemTest_006_EditUser" time="1.594" classname="com.cancer.predictive.SystemTest" />
+                <testcase name="SystemTest_003_EditPatientInfo" time="2.489" classname="com.cancer.predictive.SystemTest" />
+                <testcase name="SystemTest_001_Search" time="1.087" classname="com.cancer.predictive.SystemTest" />
+                <testcase name="SystemTest_002_AddPatient" time="2.038" classname="com.cancer.predictive.SystemTest" />
+                <testcase name="SystemTest_005_AddUser" time="1.620" classname="com.cancer.predictive.SystemTest" />
+      
+</testsuite>
