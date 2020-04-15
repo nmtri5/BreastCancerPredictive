@@ -22,6 +22,10 @@ public class SystemTest extends AbstractTest {
     EditPatientPageObjects editPatientPage;
     AddUserPageObjects addUserPage;
     EditUserPageObjects editUserPage;
+    PatientHealthDataPageObjects patientHealthDataPage;
+    EditHealthDataPageObjects editHealthDataPage;
+    PredictorPageObjects predictorPage;
+    PatientPopulationPageObjects patientPopulationPage;
 
     String parent;
 
@@ -41,7 +45,7 @@ public class SystemTest extends AbstractTest {
         homePage = loginPage.clickLoginButton();
     }
 
-    @Test
+    @Test(description = "Test a feature to search for a specific patient")
     public void SystemTest_001_Search(){
         log.info("Patient List - Click to Patient List tab");
         patientListPage = (PatientListPageObjects) homePage.clickToAnyTab(driver, "Patient List");
@@ -56,7 +60,7 @@ public class SystemTest extends AbstractTest {
         verifyTrue(searchResultPage.isSearchResultCorrect("Tri"));
     }
 
-    @Test
+    @Test(description = "Test a feature to add a new patient")
     public void SystemTest_002_AddPatient(){
         log.info("Add Patient - Click to add button");
         patientListPage = (PatientListPageObjects) searchResultPage.clickToAnyTab(driver, "Patient List");
@@ -84,7 +88,7 @@ public class SystemTest extends AbstractTest {
         verifyTrue(patientListPage.isPatientAddSuccesfully("John"));
     }
 
-    @Test
+    @Test(description = "Test a feature to edit a existing patient")
     public void SystemTest_003_EditPatientInfo(){
         log.info("Edit Patient - Click to Patient List tab");
         editPatientPage = patientListPage.clickToEditOnSpecificPatient("John");
@@ -111,7 +115,7 @@ public class SystemTest extends AbstractTest {
         verifyTrue(patientListPage.isPatientInformationUpdated("Kane", "Kennedy", "The Pentagon", "SH", "good recover"));
     }
 
-    @Test
+    @Test(description = "Test a feature to delete a existing patient")
     public void SystemTest_004_DeletePatient(){
         log.info("Delete Patient - Delete a patient");
         patientListPage.clickDeleteSpecificPatient("Kane");
@@ -120,7 +124,7 @@ public class SystemTest extends AbstractTest {
         verifyTrue(patientListPage.isTheSpecificPatientDeleted("Kane"));
     }
 
-    @Test
+    @Test(description = "Test a feature to add a new employee")
     public void SystemTest_005_AddUser(){
         log.info("Add User - Click Add Employee button");
         userManagementPage = (UserManagementPageObjects) patientListPage.clickToAnyTab(driver,"User Management ");
@@ -145,7 +149,7 @@ public class SystemTest extends AbstractTest {
         verifyTrue(userManagementPage.isTheSpecificUserAdded("trump"));
     }
 
-    @Test
+    @Test(description = "Test a feature to edit a existing employee")
     public void SystemTest_006_EditUser(){
         log.info("Edit User - Click edit on specific user");
         editUserPage = userManagementPage.clickEditOnSpecificUser("trump");
@@ -169,13 +173,89 @@ public class SystemTest extends AbstractTest {
         verifyTrue(userManagementPage.isUserInformationUpdated("trudeau", "Lab Specialist", "Radiologist"));
     }
 
-    @Test
+    @Test(description = "Test a feature to delete a existing employee")
     public void SystemTest_007_DeleteUser(){
         log.info("Delete User - Delete a user");
         userManagementPage.clickDeleteSpecificUser("trudeau");
 
         log.info("Delete User - VP: Verify the user is deleted");
         verifyTrue(userManagementPage.isTheSpecificUserDeleted("trudeau"));
+    }
+
+    @Test(description = "Test a feature to edit Patient Health Data")
+    public void SystemTest_008_EditTestData(){
+        log.info("Edit Test Data - Navigating to Patient List page");
+        patientListPage = (PatientListPageObjects) userManagementPage.clickToAnyTab(driver,"Patient List");
+
+        log.info("Edit Test Data - Click to specific patient");
+        patientHealthDataPage = patientListPage.clickToAnyPatient("Jimmy");
+
+        log.info("Edit Test Data - VP: Verify the correct patient page");
+        patientHealthDataPage.verifyCorrectPageDisplayed("Jimmy");
+
+        log.info("Edit Test Data - Click to Edit Data button");
+        editHealthDataPage = patientHealthDataPage.clickToEditDataButton();
+
+        log.info("Edit Test Data - Input new health data");
+        editHealthDataPage.inputNewHealthData(0,0,0,0,0);
+
+        log.info("Edit Test Data - Click to Submit button");
+        patientHealthDataPage = editHealthDataPage.clickToSubmit();
+
+        log.info("Edit Test Data - VP: Verify new data has been updated");
+        patientHealthDataPage.isNewEditHealthDataCorrect(0,0,0,0,0);
+
+        //Clean up test
+        log.info("Edit Test Data - Click to Edit Data button");
+        editHealthDataPage = patientHealthDataPage.clickToEditDataButton();
+
+        log.info("Edit Test Data - Input new health data");
+        editHealthDataPage.inputNewHealthData(12.2,1.5,212.2,21.5,2.1);
+
+        log.info("Edit Test Data - Click to Submit button");
+        patientHealthDataPage = editHealthDataPage.clickToSubmit();
+    }
+
+    @Test(description = "Test predictor benign")
+    public void SystemTest_009_PredictorBenign(){
+        log.info("Predictor - Navigate to predictor page");
+        predictorPage = (PredictorPageObjects) patientHealthDataPage.clickToAnyTab(driver, "Predictor");
+
+        log.info("Predictor - Input Health Data");
+        predictorPage.inputPredictData(0,0,0,0,0);
+
+        log.info("Predictor - Click to Submit Button");
+        predictorPage.clickSubmit();
+
+        log.info("Predictor - VP: veriy the result is benign");
+        predictorPage.isResultDisplayedCorrect("benign");
+    }
+
+    @Test(description = "Test predictor benign")
+    public void SystemTest_010_PredictorBenign(){
+        log.info("Predictor - Input Health Data");
+        predictorPage.inputPredictData(5.2,4.1,8.8,21,39);
+
+        log.info("Predictor - Click to Submit Button");
+        predictorPage.clickSubmit();
+
+        log.info("Predictor - VP: veriy the result is malignant");
+        predictorPage.isResultDisplayedCorrect("malignant");
+    }
+
+    @Test(description = "Test download")
+    public void SystemTest_011_DownloadChart(){
+        log.info("Data Visualization - Navigate to Patient List page");
+        patientListPage = (PatientListPageObjects) predictorPage.clickToAnyTab(driver, "Patient List");
+
+        log.info("Data Visualization - Input Health Data");
+        patientPopulationPage =  patientListPage.clickSeePopulation();
+
+        log.info("Data Visualization - Click to download as png");
+        patientPopulationPage.clickSaveAsPNG();
+
+        log.info("Data Visualization - VP: veriy the result is malignant");
+        verifyTrue(patientPopulationPage.isFileDownloadedSuccessfully());
     }
 
     @AfterClass

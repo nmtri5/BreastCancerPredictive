@@ -61,4 +61,16 @@ public class PatientListPageObjects extends AbstractPage{
     public boolean isTheSpecificPatientDeleted(String kane) {
         return isElementUndispayed(driver, PatientListPageUI.PATIENT_BY_FIRSTNAME, kane);
     }
+
+    public PatientHealthDataPageObjects clickToAnyPatient(String patientName) {
+        waitForElementPresence(driver, PatientListPageUI.DYNAMIC_PATIENT_NAME, patientName);
+        clickToElement(driver, PatientListPageUI.DYNAMIC_PATIENT_NAME, patientName);
+        return PageFactoryManager.getPatientHealthDataPage(driver);
+    }
+
+    public PatientPopulationPageObjects clickSeePopulation() {
+        waitForElementPresence(driver, PatientListPageUI.SEE_POPULATION_BUTTON);
+        clickToElement(driver, PatientListPageUI.SEE_POPULATION_BUTTON);
+        return PageFactoryManager.getPatientPopulationPage(driver);
+    }
 }

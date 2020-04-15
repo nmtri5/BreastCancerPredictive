@@ -258,7 +258,7 @@ public class AbstractPage extends Constants {
     }
 
     public AbstractPage clickToAnyTab(WebDriver driver, String tab) {
-        waitForElementVisible(driver, HomePageUI.DYNAMIC_TAB, tab);
+        sleep(1);
         clickToElement(driver, HomePageUI.DYNAMIC_TAB, tab);
         switch (tab){
             case "Patient List":
@@ -267,6 +267,8 @@ public class AbstractPage extends Constants {
                 return PageFactoryManager.getUserManagementPage(driver);
             case "Search Result":
                 return PageFactoryManager.getSearchResultPage(driver);
+            case "Predictor":
+                return PageFactoryManager.getPredictorPage(driver);
             default: return PageFactoryManager.getHomePage(driver);
         }
     }

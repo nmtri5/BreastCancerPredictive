@@ -15,5 +15,6 @@ public class PatientListPageUI {
     public static final String NEW_PATIENT_DEPARTMENT = "//table[@class='table']//tbody[last()]//td[4]";
     public static final String NEW_PATIENT_PRESCRIPTION = "//table[@class='table']//tbody[last()]//td[5]";
 
-
+    public static final String DYNAMIC_PATIENT_NAME = "//td/a[text() = '%s']";
+    public static final String SEE_POPULATION_BUTTON = "//button[text()='See population']";
 }

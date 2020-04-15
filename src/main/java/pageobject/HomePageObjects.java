@@ -22,18 +22,18 @@ public class HomePageObjects extends AbstractPage {
             case 1:
                 return countElementNumber(driver, HomePageUI.MENU_ITEM) == 3;
             case 2:
-                return countElementNumber(driver, HomePageUI.MENU_ITEM) == 5;
+                return countElementNumber(driver, HomePageUI.MENU_ITEM) == 6;
             case 3:
-                return countElementNumber(driver, HomePageUI.MENU_ITEM) == 4;
-            case 4:
                 return countElementNumber(driver, HomePageUI.MENU_ITEM) == 3;
+            case 4:
+                return countElementNumber(driver, HomePageUI.MENU_ITEM) == 4;
                 default:
                     return countElementNumber(driver, HomePageUI.MENU_ITEM) == 3;
         }
     }
 
     public LoginPageObjects clickLogoutButton() {
-        waitForElementVisible(driver, HomePageUI.LOGOUT_BUTTON);
+        sleep(1);
         clickToElement(driver, HomePageUI.LOGOUT_BUTTON);
         return PageFactoryManager.getLoginPage(driver);
     }

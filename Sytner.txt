@@ -1,50 +1,72 @@
-2020-03-19 21:02:02,360 INFO  com.cancer.predictive.SystemTest - Login - Lab Specialist input username
-2020-03-19 21:02:02,614 INFO  com.cancer.predictive.SystemTest - Login - Lab Specialist input password
-2020-03-19 21:02:02,845 INFO  com.cancer.predictive.SystemTest - Login - Lab Specialist click submit button
-2020-03-19 21:02:03,675 INFO  com.cancer.predictive.SystemTest - Patient List - Click to Patient List tab
-2020-03-19 21:02:04,129 INFO  com.cancer.predictive.SystemTest - Patient List - Input a Keyword in search field
-2020-03-19 21:02:04,313 INFO  com.cancer.predictive.SystemTest - Patient List - Click Search
-2020-03-19 21:02:04,607 INFO  com.cancer.predictive.SystemTest - Patient List - VP: Verify search result
-2020-03-19 21:02:04,762 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:04,763 INFO  com.cancer.predictive.SystemTest - Add Patient - Click to add button
-2020-03-19 21:02:05,235 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Firstname
-2020-03-19 21:02:05,489 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Lastname
-2020-03-19 21:02:05,644 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Department
-2020-03-19 21:02:05,851 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Address
-2020-03-19 21:02:06,066 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Prescription
-2020-03-19 21:02:06,285 INFO  com.cancer.predictive.SystemTest - Add Patient - Click to Add Button
-2020-03-19 21:02:06,721 INFO  com.cancer.predictive.SystemTest - Add Patient - VP: Verify added sucessful
-2020-03-19 21:02:06,801 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:06,802 INFO  com.cancer.predictive.SystemTest - Edit Patient - Click to Patient List tab
-2020-03-19 21:02:07,203 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Firstname field
-2020-03-19 21:02:07,505 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Lastname field
-2020-03-19 21:02:07,747 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Address field
-2020-03-19 21:02:08,116 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Department field
-2020-03-19 21:02:08,382 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Prescription field
-2020-03-19 21:02:08,690 INFO  com.cancer.predictive.SystemTest - Edit Patient - Click Submit button
-2020-03-19 21:02:09,152 INFO  com.cancer.predictive.SystemTest - Edit Patient - VP: Verify patient new info is updated
-2020-03-19 21:02:09,290 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:09,291 INFO  com.cancer.predictive.SystemTest - Delete Patient - Delete a patient
-2020-03-19 21:02:09,699 INFO  com.cancer.predictive.SystemTest - Delete Patient - VP: Verify the patient is deleted
-2020-03-19 21:02:24,744 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:24,745 INFO  com.cancer.predictive.SystemTest - Add User - Click Add Employee button
-2020-03-19 21:02:25,194 INFO  com.cancer.predictive.SystemTest - Add User - Input Username
-2020-03-19 21:02:25,452 INFO  com.cancer.predictive.SystemTest - Add User - Input Password
-2020-03-19 21:02:25,597 INFO  com.cancer.predictive.SystemTest - Add User - Choose a role
-2020-03-19 21:02:25,792 INFO  com.cancer.predictive.SystemTest - Add User - Choose a title
-2020-03-19 21:02:25,965 INFO  com.cancer.predictive.SystemTest - Add User - Click Add button
-2020-03-19 21:02:26,278 INFO  com.cancer.predictive.SystemTest - Add User - VP: Verify a new user is added
-2020-03-19 21:02:26,364 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:26,365 INFO  com.cancer.predictive.SystemTest - Edit User - Click edit on specific user
-2020-03-19 21:02:26,823 INFO  com.cancer.predictive.SystemTest - Edit User - Edit username
-2020-03-19 21:02:27,036 INFO  com.cancer.predictive.SystemTest - Edit User - Edit password
-2020-03-19 21:02:27,225 INFO  com.cancer.predictive.SystemTest - Edit User - Edit a role
-2020-03-19 21:02:27,357 INFO  com.cancer.predictive.SystemTest - Edit User - Edit a title
-2020-03-19 21:02:27,568 INFO  com.cancer.predictive.SystemTest - Edit User - Click Add button
-2020-03-19 21:02:27,887 INFO  com.cancer.predictive.SystemTest - Edit User - VP: Verify new information is updated
-2020-03-19 21:02:27,959 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:27,960 INFO  com.cancer.predictive.SystemTest - Delete User - Delete a user
-2020-03-19 21:02:28,244 INFO  com.cancer.predictive.SystemTest - Delete User - VP: Verify the user is deleted
-2020-03-19 21:02:43,272 INFO  com.cancer.predictive.SystemTest - ===PASSED==
-2020-03-19 21:02:43,273 INFO  com.cancer.predictive.SystemTest - OS Name: windows 10
-2020-03-19 21:02:44,240 INFO  com.cancer.predictive.SystemTest - -----QUIT BROWSER SUCCESSFULLY-----
+2020-04-15 10:31:51,412 INFO  com.cancer.predictive.SystemTest - Login - Lab Specialist input username
+2020-04-15 10:31:51,606 INFO  com.cancer.predictive.SystemTest - Login - Lab Specialist input password
+2020-04-15 10:31:51,822 INFO  com.cancer.predictive.SystemTest - Login - Lab Specialist click submit button
+2020-04-15 10:31:53,069 INFO  com.cancer.predictive.SystemTest - Patient List - Click to Patient List tab
+2020-04-15 10:31:54,947 INFO  com.cancer.predictive.SystemTest - Patient List - Input a Keyword in search field
+2020-04-15 10:31:55,108 INFO  com.cancer.predictive.SystemTest - Patient List - Click Search
+2020-04-15 10:31:55,849 INFO  com.cancer.predictive.SystemTest - Patient List - VP: Verify search result
+2020-04-15 10:31:55,953 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:31:55,954 INFO  com.cancer.predictive.SystemTest - Add Patient - Click to add button
+2020-04-15 10:31:57,939 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Firstname
+2020-04-15 10:31:58,141 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Lastname
+2020-04-15 10:31:58,354 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Department
+2020-04-15 10:31:58,516 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Address
+2020-04-15 10:31:58,736 INFO  com.cancer.predictive.SystemTest - Add Patient - Input Prescription
+2020-04-15 10:31:59,010 INFO  com.cancer.predictive.SystemTest - Add Patient - Click to Add Button
+2020-04-15 10:32:00,340 INFO  com.cancer.predictive.SystemTest - Add Patient - VP: Verify added sucessful
+2020-04-15 10:32:00,429 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:32:00,430 INFO  com.cancer.predictive.SystemTest - Edit Patient - Click to Patient List tab
+2020-04-15 10:32:01,264 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Firstname field
+2020-04-15 10:32:01,505 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Lastname field
+2020-04-15 10:32:01,791 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Address field
+2020-04-15 10:32:02,111 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Department field
+2020-04-15 10:32:02,352 INFO  com.cancer.predictive.SystemTest - Edit Patient - Edit Prescription field
+2020-04-15 10:32:02,726 INFO  com.cancer.predictive.SystemTest - Edit Patient - Click Submit button
+2020-04-15 10:32:04,110 INFO  com.cancer.predictive.SystemTest - Edit Patient - VP: Verify patient new info is updated
+2020-04-15 10:32:04,213 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:32:04,213 INFO  com.cancer.predictive.SystemTest - Delete Patient - Delete a patient
+2020-04-15 10:32:05,523 INFO  com.cancer.predictive.SystemTest - Delete Patient - VP: Verify the patient is deleted
+2020-04-15 10:32:20,562 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:32:20,563 INFO  com.cancer.predictive.SystemTest - Add User - Click Add Employee button
+2020-04-15 10:32:22,810 INFO  com.cancer.predictive.SystemTest - Add User - Input Username
+2020-04-15 10:32:22,938 INFO  com.cancer.predictive.SystemTest - Add User - Input Password
+2020-04-15 10:32:23,083 INFO  com.cancer.predictive.SystemTest - Add User - Choose a role
+2020-04-15 10:32:23,250 INFO  com.cancer.predictive.SystemTest - Add User - Choose a title
+2020-04-15 10:32:23,413 INFO  com.cancer.predictive.SystemTest - Add User - Click Add button
+2020-04-15 10:32:24,868 INFO  com.cancer.predictive.SystemTest - Add User - VP: Verify a new user is added
+2020-04-15 10:32:24,935 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:32:24,935 INFO  com.cancer.predictive.SystemTest - Edit User - Click edit on specific user
+2020-04-15 10:32:25,733 INFO  com.cancer.predictive.SystemTest - Edit User - Edit username
+2020-04-15 10:32:25,938 INFO  com.cancer.predictive.SystemTest - Edit User - Edit password
+2020-04-15 10:32:26,123 INFO  com.cancer.predictive.SystemTest - Edit User - Edit a role
+2020-04-15 10:32:26,260 INFO  com.cancer.predictive.SystemTest - Edit User - Edit a title
+2020-04-15 10:32:26,386 INFO  com.cancer.predictive.SystemTest - Edit User - Click Add button
+2020-04-15 10:32:27,803 INFO  com.cancer.predictive.SystemTest - Edit User - VP: Verify new information is updated
+2020-04-15 10:32:27,907 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:32:27,908 INFO  com.cancer.predictive.SystemTest - Delete User - Delete a user
+2020-04-15 10:32:29,236 INFO  com.cancer.predictive.SystemTest - Delete User - VP: Verify the user is deleted
+2020-04-15 10:32:44,272 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:32:44,273 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Navigating to Patient List page
+2020-04-15 10:32:46,191 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Click to specific patient
+2020-04-15 10:32:47,049 INFO  com.cancer.predictive.SystemTest - Edit Test Data - VP: Verify the correct patient page
+2020-04-15 10:32:47,109 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Click to Edit Data button
+2020-04-15 10:32:48,336 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Input new health data
+2020-04-15 10:32:49,517 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Click to Submit button
+2020-04-15 10:32:51,834 INFO  com.cancer.predictive.SystemTest - Edit Test Data - VP: Verify new data has been updated
+2020-04-15 10:32:52,178 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Click to Edit Data button
+2020-04-15 10:32:53,116 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Input new health data
+2020-04-15 10:32:53,914 INFO  com.cancer.predictive.SystemTest - Edit Test Data - Click to Submit button
+2020-04-15 10:32:55,952 INFO  com.cancer.predictive.SystemTest - Predictor - Navigate to predictor page
+2020-04-15 10:32:57,164 INFO  com.cancer.predictive.SystemTest - Predictor - Input Health Data
+2020-04-15 10:32:57,980 INFO  com.cancer.predictive.SystemTest - Predictor - Click to Submit Button
+2020-04-15 10:32:59,095 INFO  com.cancer.predictive.SystemTest - Predictor - VP: veriy the result is benign
+2020-04-15 10:32:59,161 INFO  com.cancer.predictive.SystemTest - Predictor - Input Health Data
+2020-04-15 10:32:59,970 INFO  com.cancer.predictive.SystemTest - Predictor - Click to Submit Button
+2020-04-15 10:33:01,092 INFO  com.cancer.predictive.SystemTest - Predictor - VP: veriy the result is malignant
+2020-04-15 10:33:01,174 INFO  com.cancer.predictive.SystemTest - Data Visualization - Navigate to Patient List page
+2020-04-15 10:33:05,306 INFO  com.cancer.predictive.SystemTest - Data Visualization - Input Health Data
+2020-04-15 10:33:06,824 INFO  com.cancer.predictive.SystemTest - Data Visualization - Click to download as png
+2020-04-15 10:33:12,192 INFO  com.cancer.predictive.SystemTest - Data Visualization - VP: veriy the result is malignant
+2020-04-15 10:33:12,262 INFO  com.cancer.predictive.SystemTest - ===PASSED==
+2020-04-15 10:33:12,263 INFO  com.cancer.predictive.SystemTest - OS Name: windows 10
+2020-04-15 10:33:13,106 INFO  com.cancer.predictive.SystemTest - -----QUIT BROWSER SUCCESSFULLY-----
